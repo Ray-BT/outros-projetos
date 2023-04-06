@@ -45,7 +45,7 @@ section#formulario {
     margin: auto;
     color: white;
     padding: 30px;
-    width: 483px;
+    width: 100vh;
     font-size: 1.3em;
     border-radius: 5px;
     box-sizing: border-box;
