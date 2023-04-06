@@ -18,13 +18,12 @@ body{
 }
 
 header {
-    position: relative;
-    
+    display: block;
     color: white;
     height: auto;
     max-width: 500px;
     min-width: 300px;
-    height: auto;
+    height: 100px;
     text-align: center;
     margin: auto;
     padding-top: 30px;
@@ -42,19 +41,16 @@ main#pagina {
 }
 
 section#formulario {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300px;
-    height: auto;
+    margin: auto;
     color: white;
     padding: 30px;
+    width: 300px;
     font-size: 1.3em;
     border-radius: 5px;
     box-shadow: 2px 2px 10px #2b2b49a8;
     background-color: #2b2b49ee;
     transition: width .3s;
-    transform: translate(-50%, -5%);
+    
 }
 
 input, option, select{
