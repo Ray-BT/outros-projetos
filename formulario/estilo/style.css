@@ -86,12 +86,14 @@ input[type=radio] {
     display: inline-block;
     text-align: left;
     width: 20px;
+    transform: scale(1.5);
 }
 
 input[type=checkbox] {
     display: inline-block;
     text-align: left;
     width: 20px;
+    transform: scale(1.5);
 
 }
 
