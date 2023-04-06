@@ -22,9 +22,11 @@ High-res laptop or desktop: 1920 x 1080
     }
 
     #iarea {
-        width: 95.5%;
+        width: 100%;
         height: 100px;
+        resize: vertical;
         padding: 10px;
+        box-sizing: border-box;
     }
 }
 
@@ -34,9 +36,12 @@ High-res laptop or desktop: 1920 x 1080
     }
 
     #iarea {
-        width: 97%;
+        width: 100%;
         height: 100px;
+        resize: vertical;
         padding: 10px;
+        box-sizing: border-box;
+
     }
 
     section#formulario {
