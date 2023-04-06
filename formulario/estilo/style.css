@@ -18,9 +18,21 @@ body{
 }
 
 header {
+    position: relative;
+    
     color: white;
-    padding: 150px;
+    padding: 40px;
+    height: auto;
+    max-width: 500px;
+    min-width: 300px;
+    height: auto;
     text-align: center;
+    margin: auto;
+    margin-top: 100px;
+}
+
+header > p {
+    font-size: 0.9em;
 }
 
 main#pagina {
@@ -39,15 +51,18 @@ section#formulario {
     color: white;
     padding: 30px;
     font-size: 1.3em;
-    background-color: #2b2b49d0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #2b2b49a8;
+    background-color: #2b2b49ee;
     transition: width .3s;
-    transform: translate(-50%, -20%);
+    transform: translate(-50%, -10%);
 }
 
 input, option, select{
     width: 90%;
-    font-size: 25px;
+    font-size: .8em;
     border-radius: 5px;
+    padding: 5px;
 }
 
 p {
@@ -83,5 +98,22 @@ input[type=checkbox] {
     width: 20px;
 
 }
+
+#iarea {
+    width: 93%;
+    height: 100px;
+    padding: 10px;
+}
+
+#isubmit {
+    background-color: #37AF65;
+    color: white;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+}
+
 
 

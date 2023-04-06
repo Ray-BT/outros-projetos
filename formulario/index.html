@@ -18,17 +18,17 @@
             <form action="login.php" method="post" autocomplete="on">
                 <div class="divinput">
                     <label for="inome">Nome</label>
-                    <input type="text" name="nome" id="inome" required autocomplete="name">
+                    <input type="text" name="nome" id="inome" required autocomplete="name" placeholder="Digite seu nome">
                 </div>
 
                 <div class="divinput">
                     <label for="iemail">Email</label>
-                    <input type="email" name="email" id="iemail" required autocomplete="email">
+                    <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="Digite seu email">
                 </div>
 
                 <div class="divinput">
                     <label for="iidade">Idade(Opicional)</label>
-                    <input type="number" name="idade" id="iidade" required minlength="10" maxlength="100">
+                    <input type="number" name="idade" id="iidade" required minlength="10" maxlength="100" placeholder="Idade">
                 </div>
 
                 <p>Qual opção melhor descreve sua função atual?</p>
@@ -70,7 +70,9 @@
                 <input type="checkbox" name="cursos" id="icursos"> <label for="icursos">Cursos Adicionais</label><br>
 
                 <p>Algum comentário ou sugestão?</p>
-                <textarea name="area" id="iarea" cols="30" rows="10" placeholder=""></textarea>
+                <textarea name="area" id="iarea" cols="30" rows="10" placeholder="Digite seu comentário aqui..."></textarea>
+                <label for="isubmit"></label>
+                <input type="submit" name="submit" id="isubmit">
 
             </form>
         </section>

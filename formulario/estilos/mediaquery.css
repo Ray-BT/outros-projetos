@@ -15,11 +15,31 @@ High-res laptop or desktop: 1920 x 1080
     section#formulario{
         width: 500px;
     }
+
+    #iarea {
+        width: 95.5%;
+        height: 100px;
+        padding: 10px;
+    }
 }
 
 @media screen and (min-width: 1024px) { /*DESKTOP+*/
-    section#formulario {
-        width: 700px;
+    header {
+        padding: 60px;
     }
 
+    #iarea {
+        width: 97%;
+        height: 100px;
+        padding: 10px;
+    }
+
+    section#formulario {
+        width: 650px;
+        padding: 40px;
+    }
+
+    section#formulario {
+        transform: translate(-50%, -20%);
+    }
 }
