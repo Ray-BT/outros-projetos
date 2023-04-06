@@ -16,6 +16,10 @@ High-res laptop or desktop: 1920 x 1080
         width: 500px;
     }
 
+    header {
+        padding-top: 50px;
+    }
+
     #iarea {
         width: 95.5%;
         height: 100px;
@@ -25,7 +29,7 @@ High-res laptop or desktop: 1920 x 1080
 
 @media screen and (min-width: 1024px) { /*DESKTOP+*/
     header {
-        padding: 60px;
+        padding-top: 45px;
     }
 
     #iarea {
@@ -40,6 +44,6 @@ High-res laptop or desktop: 1920 x 1080
     }
 
     section#formulario {
-        transform: translate(-50%, -20%);
+        transform: translate(-50%, -25%);
     }
 }
