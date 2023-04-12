@@ -3,6 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -33,4 +34,261 @@ header h1, p {
 header a {
     display: block;
     text-align: center;
+    
+    background-color: #333333;
+}
+
+                                               /*SECTION 1*/    
+
+.sec1 {
+    background-color: #eaeaea ;
+    padding: 20px;
+    opacity: 0.9;
+}
+
+.divcontainer1 {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 900px;
+    padding: 10px;
+    grid-gap: 10px;
+    font-size: 1em;
+    background-color: #eaeaea;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 500px) 50px 1fr);
+    grid-template-areas: 
+    "gridsech1 gridsech1 gridsech1 "
+    "gridsecp1 . gridsecp2";
+}
+
+.gridsech1 {
+    padding-bottom: 5px;
+    padding-top: 20px;
+    font-size: 1.6em;
+    grid-area: gridsech1;
+}
+
+.gridsecp1 {
+    padding: 20px;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5em;
+    grid-area: gridsecp1;
+}
+
+.gridsecp2 {
+    padding: 20px;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5em;
+    grid-area: gridsecp2;
+}
+
+                                                /*SECTION 2*/
+
+.sec2 {
+    background-color: #333333;
+    padding: 30px;
+    
+}
+
+.divcontainer2 {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    height: auto;
+    width: 900px;
+    padding: 10px;
+    grid-gap: 25px;
+    font-size: 1em;
+    background-color: #333333;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 500px) 1fr);
+    grid-template-rows: 500px;
+    grid-template-areas: 
+    "gridsec2div1 gridsec2div2 gridsec2div3";
+}
+
+
+
+#gridsec2div1 {
+    background-color: white;
+    min-width: 250px;
+    max-width: 280px;
+    height: auto;
+
+}
+
+#gridsec2div2 {
+    background-color: white;
+    min-width: 250px;
+    max-width: 280px;
+    height: auto;
+    
+}
+
+#gridsec2div3 {
+    background-color: white;
+    min-width: 250px;
+    max-width: 280px;
+    height: auto;
+    
+}
+
+.gridsec2 > p {
+    color: black;
+    padding: 20px;
+    line-height: 1.7em;
+    font-size: 1.1rem;
+}
+
+.gridsec2 > h1{
+    font-size: 1.3em;
+    padding: 20px;    
+}
+
+.divimg1 {
+    background: url(https://static.pexels.com/photos/574077/pexels-photo-574077.jpeg);
+    background-size: cover;
+    margin-bottom: 30px;
+    height: 200px;
+    width: auto;
+}
+
+.divimg2 {
+    background: url(https://static.pexels.com/photos/261628/pexels-photo-261628.jpeg);
+    background-size: cover;
+    margin-bottom: 30px;
+    height: 200px;
+    width: auto;
+}
+
+.divimg3 {
+    background: url(https://static.pexels.com/photos/265087/pexels-photo-265087.jpeg);
+    background-size: cover;
+    margin-bottom: 30px;
+    height: 200px;
+    width: auto;
+}
+
+                                                /*SECTION 3*/
+
+.sec3 {
+    background-color: white;
+}
+
+.divcontainer3 {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 900px;
+    padding: 30px;
+    height: 200px;
+    grid-gap: 10px;
+    font-size: 1em;
+    background-color: white;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 500px) 1fr);
+    grid-template-areas: 
+    "gridsec3h1 gridsec3h1 gridsec3h1 "
+    "gridsec3p gridsec3p gridsec3p";
+}
+
+.gridsec3h1 {
+    padding-bottom: 5px;
+    padding-top: 20px;
+    font-size: 1.6em;
+    grid-area: gridsec3h1;
+}
+
+.gridsec3p {
+    padding: 20px;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: black;
+    grid-area: gridsec3p;
+    
+}
+                                                /*SECTION 4*/
+.containercontact {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 100vw;
+    font-size: 1.2em;
+    overflow-y: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) 1fr);
+    grid-template-rows: 300px;
+    grid-template-areas: 
+    "divcontact divabout";
+
+}
+
+
+.containercontact h1 {
+    color: white;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    overflow-y: hidden;
+}
+
+.containercontact p{
+    line-height: 1.4em;
+}
+
+.divcontact {
+    grid-area: divcontact;
+    background-color: #2690D4;
+    width: 50vw;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.divabout {
+    grid-area: divabout;
+    background-color: #333333;
+    width: 50vw;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+                                           /*FOOTER*/
+
+.containerfooter {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 100vw;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) 1fr);
+    grid-template-rows: 100px;
+    grid-template-areas: 
+    "divfooter1 divfooter2";
+}
+
+.divfooter2 > a {
+    color: #2690D4;
+    text-decoration: none;
+}
+
+
+.divfooter1 {
+    grid-area: divfooter1;
+    background-color: black;
+    color: white;
+    width: 50vw;
+    padding-top: 40px;
+    font-size: 1.2em;
+}
+
+.divfooter2 {
+    grid-area: divfooter2;
+    background-color: black;
+    color: white;
+    width: 50vw;
+    padding-top: 40px;
+    font-size: 1.3em;
 }
