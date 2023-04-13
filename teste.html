@@ -13,6 +13,12 @@
             font-size: 1.5em;
         }
 
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 0;
+        }
+
         .grid-template-columns {
             display: grid;
             margin-top: 10px;
@@ -67,6 +73,14 @@
             grid-area: item3;
         }
 
+        .grid-template-columns4 {
+            display: grid;
+            background-color: tomato;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 3fr;
+            grid-column-gap: 0;
+        }
+
     </style>
 </head>
 <body>
@@ -87,6 +101,12 @@
         <div class="item1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint eligendi possimus? Unde officiis magnam laborum ipsa distinctio odio, vero dolores</div>
         <div class="item2">Web & Application Development</div>
         <div class="item3">dicta aliquam aperiam repellendus. Perferendis officiis deserunt velit voluptas nobis sequi animi totam, accusantium, ex eius quia, natus quo?</div>
+    </section>
+
+    <section class="grid grid-template-columns4">
+        <div class="item">esaes aeasea seaseesae </div>
+        <div class="item">2</div>
+    
     </section>
 </body>
 </html>

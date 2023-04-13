@@ -23,6 +23,33 @@ header h1, p {
     color: white;
 }
 
+.divbotao {
+    margin: auto;
+    width: 150px;
+    box-sizing: border-box;
+}
+
+.botao {
+    display: block;
+    text-align: center;
+    width: 150px;
+    padding: 1em 2em;
+    margin: 0.5em 0;
+    box-sizing: border-box;
+    border: 1px solid #a7a7a7;
+    box-shadow: none;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #242323;
+    transition: .3s;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
 #containerhd {
     position: absolute;
     top: 50%;
@@ -31,12 +58,6 @@ header h1, p {
     
 }
 
-header a {
-    display: block;
-    text-align: center;
-    
-    background-color: #333333;
-}
 
                                                /*SECTION 1*/    
 
@@ -51,15 +72,16 @@ header a {
     justify-content: center;
     text-align: center;
     margin: auto;
-    width: 900px;
+    width: 300px;
     padding: 10px;
     grid-gap: 10px;
     font-size: 1em;
     background-color: #eaeaea;
     grid-template-columns: repeat(auto-fit, minmax(300px, 500px) 50px 1fr);
-    grid-template-areas: 
-    "gridsech1 gridsech1 gridsech1 "
-    "gridsecp1 . gridsecp2";
+    grid-template-areas:
+    "gridsech1 "
+    "gridsecp1" 
+    "gridsecp2 ";
 }
 
 .gridsech1 {
@@ -99,7 +121,7 @@ header a {
     text-align: center;
     margin: auto;
     height: auto;
-    width: 900px;
+    width: 300px;
     padding: 10px;
     grid-gap: 25px;
     font-size: 1em;
@@ -107,7 +129,9 @@ header a {
     grid-template-columns: repeat(auto-fit, minmax(300px, 500px) 1fr);
     grid-template-rows: 500px;
     grid-template-areas: 
-    "gridsec2div1 gridsec2div2 gridsec2div3";
+    "gridsec2div1  "
+    "gridsec2div2"
+    "gridsec2div3";
 }
 
 #gridsec2div1 {
@@ -181,16 +205,16 @@ header a {
     justify-content: center;
     text-align: center;
     margin: auto;
-    width: 900px;
+    width: 300px;
     padding: 30px;
-    height: 200px;
+    
     grid-gap: 10px;
     font-size: 1em;
     background-color: white;
     grid-template-columns: repeat(auto-fit, minmax(300px, 500px) 1fr);
     grid-template-areas: 
-    "gridsec3h1 gridsec3h1 gridsec3h1 "
-    "gridsec3p gridsec3p gridsec3p";
+    "gridsec3h1"
+    "gridsec3p";
 }
 
 .gridsec3h1 {
@@ -219,7 +243,7 @@ header a {
     font-size: 1.2em;
     overflow-y: hidden;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) 1fr);
-    grid-template-rows: 300px;
+    grid-template-rows: auto;
     grid-template-areas: 
     "divcontact divabout";
 
@@ -260,33 +284,26 @@ header a {
     justify-content: center;
     text-align: center;
     margin: auto;
-    width: 100vw;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) 1fr);
-    grid-template-rows: 100px;
-    grid-template-areas: 
-    "divfooter1 divfooter2";
+    padding: 10px;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    box-sizing: border-box;
+    grid-columns: span 2;
+    
+    
 }
 
-.divfooter2 > a {
+.divfooter > a {
     color: #2690D4;
     text-decoration: none;
 }
 
 
-.divfooter1 {
-    grid-area: divfooter1;
+.divfooter {
+    padding: 20px;
     background-color: black;
     color: white;
-    width: 50vw;
-    padding-top: 40px;
     font-size: 1.2em;
-}
-
-.divfooter2 {
-    grid-area: divfooter2;
-    background-color: black;
-    color: white;
-    width: 50vw;
-    padding-top: 40px;
-    font-size: 1.3em;
+    box-sizing: border-box;
 }

@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+/*Typical Device Breakpoints 2023
+Mobile: 360 x 640.
+Mobile: 375 x 667.
+Mobile: 360 x 720.
+iPhone X: 375 x 812.
+Pixel 2: 411 x 731.
+Tablet: 768 x 1024.
+Laptop: 1366 x 768.
+High-res laptop or desktop: 1920 x 1080.*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) { /*TABLET*/
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .divcontainer1 {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        width: 900px;
+        padding: 10px;
+        grid-gap: 10px;
+        font-size: 1em;
+        background-color: #eaeaea;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 500px) 50px 1fr);
+        grid-template-areas: 
+        "gridsech1 gridsech1 gridsech1 "
+        "gridsecp1 . gridsecp2";
+    }
+
+    .divcontainer2 {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        height: auto;
+        width: 900px;
+        padding: 10px;
+        grid-gap: 25px;
+        font-size: 1em;
+        background-color: #333333;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 500px) 1fr);
+        grid-template-rows: 500px;
+        grid-template-areas: 
+        "gridsec2div1 gridsec2div2 gridsec2div3";
+    }
+
+    #gridsec2div1 {
+        background-color: white;
+        min-width: 250px;
+        max-width: 280px;
+        height: auto;
+    
+    }
+    
+    #gridsec2div2 {
+        background-color: white;
+        min-width: 250px;
+        max-width: 280px;
+        height: auto;
+        
+    }
+    
+    #gridsec2div3 {
+        background-color: white;
+        min-width: 250px;
+        max-width: 280px;
+        height: auto;
+        
+    }
+    
+    .gridsec2 > p {
+        color: black;
+        padding: 20px;
+        line-height: 1.7em;
+        font-size: 1.1rem;
+    }
+    
+    .gridsec2 > h1{
+        font-size: 1.3em;
+        padding: 20px;    
+    }
+    
+    .divimg1 {
+        background: url(https://static.pexels.com/photos/574077/pexels-photo-574077.jpeg);
+        background-size: cover;
+        margin-bottom: 30px;
+        height: 200px;
+        width: auto;
+    }
+    
+    .divimg2 {
+        background: url(https://static.pexels.com/photos/261628/pexels-photo-261628.jpeg);
+        background-size: cover;
+        margin-bottom: 30px;
+        height: 200px;
+        width: auto;
+    }
+    
+    .divimg3 {
+        background: url(https://static.pexels.com/photos/265087/pexels-photo-265087.jpeg);
+        background-size: cover;
+        margin-bottom: 30px;
+        height: 200px;
+        width: auto;
+    }
+
+    .divcontainer3 {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        width: 900px;
+        padding: 30px;
+        height: 200px;
+        grid-gap: 10px;
+        font-size: 1em;
+        background-color: white;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 500px) 1fr);
+        grid-template-areas: 
+        "gridsec3h1 gridsec3h1 gridsec3h1 "
+        "gridsec3p gridsec3p gridsec3p";
+    }
+
+    .containercontact {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        width: 100vw;
+        font-size: 1.2em;
+        overflow-y: hidden;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "divcontact divabout";
+    
+    }
+    
+    
+    .containercontact h1 {
+        color: white;
+        margin-bottom: 20px;
+        padding-top: 30px;
+        overflow-y: hidden;
+    }
+    
+    .containercontact p{
+        line-height: 1.4em;
+    }
+    
+    .divcontact {
+        grid-area: divcontact;
+        background-color: #2690D4;
+        width: 50vw;
+        padding-top: 30px;
+        box-sizing: border-box;
+    }
+    
+    .divabout {
+        grid-area: divabout;
+        background-color: #333333;
+        width: 50vw;
+        padding-top: 30px;
+        box-sizing: border-box;
+    }
+
+    .containerfooter {
+        display: grid;
+        background-color: black;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 0;
+    }
+    
+    .divfooter > a {
+        color: #2690D4;
+        text-decoration: none;
+    }
+    
+    
+    .divfooter {
+        padding: 20px;
+        background-color: black;
+        color: white;
+        font-size: 1.2em;
+        box-sizing: border-box;
+    }
+}
