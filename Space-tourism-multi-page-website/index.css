@@ -335,7 +335,7 @@ select {
     }
 
     .mobile-nav-toggle[aria-expanded="true"] {
-        background-image: url(../shared/icon-close.svg);
+        background-image: url(./shared/icon-close.svg);
         transition: all ease .2s;
     }
     
